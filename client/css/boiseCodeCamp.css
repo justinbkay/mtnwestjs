@@ -1,0 +1,62 @@
+/* CSS declarations go here */
+.meteor_logo {
+  float: left;
+  margin-right: 80px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.title_header {
+  float: left;
+}
+
+.profile_cell {
+  width: 80px;
+}
+
+.text_top_padding {
+  padding-top: 24px;
+}
+
+.twitter_name_cell {
+  width: 150px;
+}
+
+.twitter_follow_cell {
+  width: 300px;
+}
+
+html, body {
+	background:url(stars.jpg) top right no-repeat; background-position:fixed;
+	background-color: #000;
+	height: 100%;
+}
+
+.container {
+	background-color: #FFF;
+	height: 100%;
+}
+
+.user_container {
+  padding: 5px;
+  margin-top: -10px;
+}
+
+#profile {
+  position: relative;
+  top: 5px;
+}
+
+img.user {
+  position: relative;
+  top: -8px;
+}
+
+.bg-danger {
+  padding: 3px;
+  color: red;
+  margin-top: 3px;
+  font-size: 1.4em;
+  display: none;
+}
+

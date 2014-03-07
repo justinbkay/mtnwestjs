@@ -1,0 +1,11 @@
+<template name="loggedInUser">
+  <div class="user_container">
+    {{#if currentUser}}<img class="img-circle user" src="{{currentUser.services.twitter.profile_image_url}}"/> &nbsp;{{/if}}
+    {{loginButtons}}
+    {{#if currentUser}}
+      <button id="profile" type="button" class="pull-right btn btn-default btn-md">
+        <span class="glyphicon glyphicon-cog"></span>
+      </button>
+    {{/if}}
+  </div>
+</template>

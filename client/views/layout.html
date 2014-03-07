@@ -1,0 +1,35 @@
+<template name="layout">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 well">
+        <div class="meteor_logo">
+          <a href="http://www.meteor.com"><img class="img-rounded" src="meteor.png" /></a>
+        </div>
+        <div class="title_header">
+          <h1><a href="http://mtnwestjs.org/"><img class="img-rounded" src="mtnwestjs.png" /></a> MountainWest JS Dev Connection</h1>
+          <h2>Sign in with Twitter to connect to other devs</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+
+      </div>
+      <div class="col-md-4">
+        {{yield 'userInfo'}}
+      </div>
+      <div class="col-md-1">
+
+      </div>
+    </div>
+    {{yield}}
+  </div>
+</template>
+
+<template name="loading">
+  <h1>Loading</h1>
+</template>
+
+<template name="notFound">
+  <h1>Sorry I couldn't find that!</h1>
+</template>

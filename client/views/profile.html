@@ -1,0 +1,15 @@
+<template name="profile">
+  <div id="name_group" class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" value="{{currentUser.profile.name}}" id="name" />
+    <p class="bg-danger" id="name_error">Name is a required field</p>
+  </div>
+  <div class="form-group">
+    <label for="name">Tagline</label>
+    <input class="form-control" value="{{currentUser.profile.tagline}}" id="tagline" style="size: 100" />
+  </div>
+  <p>
+    <button id="save" class="btn btn-primary">Save</button>
+    <button id="cancel" style="margin-left: 20px;" class="btn btn-danger">Cancel</button>
+  </p>
+</template>

@@ -1,0 +1,22 @@
+<template name="user">
+  <tr>
+    <td class="profile_cell">
+      <a target="_blank" href="http://twitter.com/{{services.twitter.screenName}}">
+        <img class="img-circle" src="{{services.twitter.profile_image_url}}"/>
+      </a>
+    </td>
+    <td class="text_top_padding twitter_name_cell">
+      <a target="_blank" href="http://twitter.com/{{services.twitter.screenName}}">
+         {{profile.name}}
+      </a>
+    </td>
+    <td class="text_top_padding twitter_follow_cell">
+      {{#constant}}
+        <iframe style="width: 300px; height: 20px;" src="//platform.twitter.com/widgets/follow_button.html?screen_name={{services.twitter.screenName}}" height="240" width="320" frameborder="0" scrolling="no"></iframe>
+      {{/constant}}
+    </td>
+    <td class="text_top_padding">
+        {{profile.tagline}}
+    </td>
+  </tr>
+</template>
